@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Construcciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-bg{
+      background:linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80');
+      background-size:cover;
+      background-position:center;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- HEADER -->
+  <header class="w-full py-6 flex justify-between items-center px-6 fixed top-0 left-0 bg-black bg-opacity-80 backdrop-blur-md z-50 shadow-lg">
+    <h1 class="text-2xl font-bold text-yellow-400">CS CONSTRUCCIONES</h1>
+    <nav class="space-x-6 hidden md:block">
+      <a href="#inicio" class="hover:text-yellow-400">Inicio</a>
+      <a href="#servicios" class="hover:text-yellow-400">Servicios</a>
+      <a href="#autosustentable" class="hover:text-yellow-400">Autosustentables</a>
+      <a href="#contacto" class="hover:text-yellow-400">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-bg h-screen flex items-center justify-center text-center px-6">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-extrabold text-yellow-400">Diseño y Construcción de Alto Nivel</h2>
+      <p class="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">Residencias, cabañas, casas autosustentables y proyectos arquitectónicos de precisión profesional.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="max-w-6xl mx-auto px-6 py-24">
+    <h3 class="text-3xl font-bold text-yellow-400 mb-6">Servicios Profesionales</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-900 rounded-xl shadow-xl border border-yellow-400">
+        <h4 class="text-xl font-bold mb-2">Diseño Arquitectónico</h4>
+        <p class="text-gray-300 text-sm">Proyectos residenciales, cabañas, ampliaciones, renderizado 3D y entrega ejecutiva detallada.</p>
+      </div>
+
+      <div class="p-6 bg-gray-900 rounded-xl shadow-xl border border-yellow-400">
+        <h4 class="text-xl font-bold mb-2">Construcción Profesional</h4>
+        <p class="text-gray-300 text-sm">Ejecución precisa, seguridad estructural y acabados de calidad superior. Construir con un profesional evita fallas, gastos extras y riesgos.</p>
+      </div>
+
+      <div class="p-6 bg-gray-900 rounded-xl shadow-xl border border-yellow-400">
+        <h4 class="text-xl font-bold mb-2">Supervisión & Dirección</h4>
+        <p class="text-gray-300 text-sm">Control total de obra, métricas, calidad y optimización de materiales para garantizar resultados duraderos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOSUSTENTABLE -->
+  <section id="autosustentable" class="py-24" style="background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80'); background-size:cover; background-position:center;">
+    <div class="bg-white bg-opacity-20 backdrop-blur-md max-w-6xl mx-auto p-10 rounded-xl">
+      <h3 class="text-3xl font-bold text-green-200 mb-4">Casas Autosustentables</h3>
+      <p class="text-green-100 max-w-2xl">Diseños bioclimáticos, paneles solares, captación pluvial, ventilación natural y sistemas de ahorro energético integrados desde el concepto.</p>
+      <ul class="mt-6 space-y-2 text-green-100 font-medium">
+        <li>✔ Paneles solares de alto rendimiento</li>
+        <li>✔ Captación y uso de agua de lluvia</li>
+        <li>✔ Ahorros de hasta 60,000 MXN por año</li>
+        <li>✔ Materiales térmicos y ecológicos</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="max-w-4xl mx-auto px-6 py-24">
+    <h3 class="text-3xl font-bold text-yellow-400 mb-6">Contacto</h3>
+    <form class="grid gap-4">
+      <input type="text" placeholder="Nombre" class="p-3 rounded bg-gray-800 border border-yellow-400" />
+      <input type="email" placeholder="Correo" class="p-3 rounded bg-gray-800 border border-yellow-400" />
+      <textarea placeholder="Mensaje" class="p-3 rounded bg-gray-800 border border-yellow-400"></textarea>
+      <button class="bg-yellow-400 text-black py-3 rounded font-bold hover:bg-yellow-300">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-8 border-t border-yellow-400 text-gray-400">
+    © 2025 CS Construcciones — Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
